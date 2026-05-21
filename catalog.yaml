@@ -1,0 +1,26 @@
+version: 1
+skills:
+  - name: skill-builder
+    description: Opretter nye skills interaktivt via samtale
+    tags: [meta, core]
+    file: skills/skill-builder.md
+
+  - name: prd-guide
+    description: Guider fra projektidé til første spec via PRD-format
+    tags: [meta, core, planning]
+    file: skills/prd-guide.md
+
+  - name: feature-detector
+    description: Genkender feature-intent og foreslår spec + worktree
+    tags: [meta, core, workflow]
+    file: skills/feature-detector.md
+
+  - name: tdd
+    description: Test-drevet udvikling — skriv tests før implementering
+    tags: [testing, quality]
+    file: skills/tdd.md
+
+  - name: code-review
+    description: Grundig code review med fokus på sikkerhed og kvalitet
+    tags: [quality, security]
+    file: skills/code-review.md
