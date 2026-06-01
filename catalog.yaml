@@ -24,3 +24,18 @@ skills:
     description: Grundig code review med fokus på sikkerhed og kvalitet
     tags: [quality, security]
     file: skills/code-review.md
+
+  - name: security-review
+    description: Interaktiv OWASP/CWE sikkerhedsanalyse af Go-kode med strukturerede fund
+    tags: [security, quality]
+    file: skills/security-review.md
+
+  - name: ci-hardening
+    description: GitHub Actions CI — opsætning, SHA-pinning, Dependabot og diagnostik
+    tags: [ci, security, quality]
+    file: skills/ci-hardening.md
+
+  - name: secure-harness
+    description: Design af sikre bash/CLI-pipelines der sender ikke-betroet indhold til claude --print
+    tags: [security, ai_engineering]
+    file: skills/secure-harness.md
