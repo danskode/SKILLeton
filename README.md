@@ -8,17 +8,6 @@
 ███████   ██   ██   ██████   ███████  ███████     ████     ███   ███   █  █
 ```
 
-```
-            ,-,,-,   __
-     ______/     /_,'  |
-     \________________/
-          |\) (/ |
-       (  | oo   |
-        ) `|  |--'
-       (___^^^^|
-          (____'
-```
-
 Et åbent bibliotek af skills til [ekte](https://github.com/danskode/ekte) —
 den personlige AI developer harness.
 
