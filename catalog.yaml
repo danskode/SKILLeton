@@ -2,60 +2,82 @@ version: 1
 skills:
   - name: skill-builder
     description: Opretter nye skills interaktivt via samtale
+    version: 1.0.0
     tags: [meta, core]
     file: skills/skill-builder.md
 
   - name: prd-guide
     description: Guider fra projektidé til første spec via PRD-format
+    version: 1.0.0
     tags: [meta, core, planning]
     file: skills/prd-guide.md
 
   - name: intent-spec-guide
     description: Guider formulering af Intent-Specs med IDD's sproglige bevidsthed om kontekstformning og misforståelsesforebyggelse
+    version: 1.0.0
     tags: [meta, core, spec, idd]
+    requires: [harness]
     file: skills/intent-spec-guide.md
 
   - name: feature-detector
     description: Genkender feature-intent og foreslår spec + worktree
+    version: 1.0.0
     tags: [meta, core, workflow]
     file: skills/feature-detector.md
 
   - name: tdd
     description: Test-drevet udvikling — skriv tests før implementering
+    version: 1.0.0
     tags: [testing, quality]
     file: skills/tdd.md
 
   - name: code-review
     description: Grundig code review med fokus på sikkerhed og kvalitet
+    version: 1.0.0
     tags: [quality, security]
     file: skills/code-review.md
 
   - name: security-review
     description: Interaktiv OWASP/CWE sikkerhedsanalyse af Go-kode med strukturerede fund
+    version: 1.0.0
     tags: [security, quality]
     file: skills/security-review.md
 
   - name: ci-hardening
     description: GitHub Actions CI — opsætning, SHA-pinning, Dependabot og diagnostik
+    version: 1.0.0
     tags: [ci, security, quality]
     file: skills/ci-hardening.md
 
   - name: secure-harness
     description: Design af sikre bash/CLI-pipelines der sender ikke-betroet indhold til claude --print
+    version: 1.0.0
     tags: [security, ai_engineering]
     file: skills/secure-harness.md
 
   - name: pitch-first
     description: Kritisk feature-review der starter med en pitch for at sikre fælles forståelse (AIDD)
+    version: 1.0.0
     tags: [meta, core, planning, aidd]
+    requires: [harness]
     file: skills/pitch-first.md
 
   - name: context-layers
     description: Forklarer ekte's kontekst-konstruktion til læring og fejlfinding
+    version: 1.0.0
     tags: [meta, aidd, educational]
+    requires: [harness]
     file: skills/context-layers.md
 
   - name: dreamer
     description: Reflekterende self-evaluation — finder blinde vinkler og forbedringer i eget output
+    version: 1.0.0
     tags: [quality, reflection, meta]
     file: skills/dreamer.md
+
+  - name: wiki-maintainer
+    description: Drift af simple-minded-wikien — ingest, forespørgsel-med-filing, gap-analyse og lint
+    version: 1.0.0
+    tags: [wiki, knowledge, core]
+    requires: [wiki]
+    file: skills/wiki-maintainer.md
