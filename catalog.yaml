@@ -10,6 +10,11 @@ skills:
     tags: [meta, core, planning]
     file: skills/prd-guide.md
 
+  - name: intent-spec-guide
+    description: Guider formulering af Intent-Specs med IDD's sproglige bevidsthed om kontekstformning og misforståelsesforebyggelse
+    tags: [meta, core, spec, idd]
+    file: skills/intent-spec-guide.md
+
   - name: feature-detector
     description: Genkender feature-intent og foreslår spec + worktree
     tags: [meta, core, workflow]
@@ -39,3 +44,18 @@ skills:
     description: Design af sikre bash/CLI-pipelines der sender ikke-betroet indhold til claude --print
     tags: [security, ai_engineering]
     file: skills/secure-harness.md
+
+  - name: pitch-first
+    description: Kritisk feature-review der starter med en pitch for at sikre fælles forståelse (AIDD)
+    tags: [meta, core, planning, aidd]
+    file: skills/pitch-first.md
+
+  - name: context-layers
+    description: Forklarer ekte's kontekst-konstruktion til læring og fejlfinding
+    tags: [meta, aidd, educational]
+    file: skills/context-layers.md
+
+  - name: dreamer
+    description: Reflekterende self-evaluation — finder blinde vinkler og forbedringer i eget output
+    tags: [quality, reflection, meta]
+    file: skills/dreamer.md
