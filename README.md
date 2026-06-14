@@ -45,6 +45,8 @@ To begreber, der ikke må forveksles:
 | `context-layers` | Forklarer ekte's kontekst-konstruktion til læring og fejlfinding | meta, aidd, educational | harness |
 | `dreamer` | Reflekterende self-evaluation — finder blinde vinkler i eget output | quality, reflection, meta | |
 | `wiki-maintainer` | Drift af simple-minded-wikien — ingest, gap-analyse og lint | wiki, knowledge, core | wiki |
+| `java-spring` | Idiomatisk Java + Spring Boot (eksempel på sprogspecifik skill) | java, spring, language | |
+| `ui-designer` | UI/UX-designprincipper — hierarki, konsistens, tilgængelighed | design, ui, ux | |
 
 **Obligatoriske skills** auto-installeres af ekte: `harness`-skills altid (AIDD er
 præmissen for harnesset), `wiki`-skills når du tilvælger en wiki.
@@ -59,6 +61,25 @@ præmissen for harnesset), `wiki`-skills når du tilvælger en wiki.
 ```
 
 Eller vælg under onboarding når du starter ekte første gang.
+
+## Pakker (bundles)
+
+Installér en hel kategori på én gang i stedet for skill-for-skill:
+
+```
+/skills bundle              # se pakker
+/skills bundle security     # installer hele security-pakken
+```
+
+| Pakke | Indeholder |
+|---|---|
+| `security` | security-review, secure-harness, safe-flow |
+| `ci` | ci-hardening, safe-flow |
+| `aidd` | intent-spec-guide, pitch-first, context-layers |
+| `java` | java-spring |
+| `designer` | ui-designer |
+
+Pakker defineres i `bundles:` i `library.yaml`.
 
 ## Bidrag
 

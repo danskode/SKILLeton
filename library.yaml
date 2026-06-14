@@ -87,3 +87,23 @@ skills:
     tags: [wiki, knowledge, core]
     requires: [wiki]
     file: skills/wiki-maintainer.md
+
+  - name: java-spring
+    description: Idiomatisk Java + Spring Boot — lagdeling, constructor injection, validering og test (eksempel på sprogspecifik skill)
+    version: 1.0.0
+    tags: [java, spring, language]
+    file: skills/java-spring.md
+
+  - name: ui-designer
+    description: UI/UX-designprincipper — hierarki, konsistens, tilgængelighed og design tokens
+    version: 1.0.0
+    tags: [design, ui, ux]
+    file: skills/ui-designer.md
+
+# Kuraterede pakker — installér en hel kategori med '/skills bundle <navn>'.
+bundles:
+  security: [security-review, secure-harness, safe-flow]
+  ci: [ci-hardening, safe-flow]
+  aidd: [intent-spec-guide, pitch-first, context-layers]
+  java: [java-spring]
+  designer: [ui-designer]
