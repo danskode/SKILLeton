@@ -14,7 +14,7 @@ den personlige AI developer harness.
 ## Hvad er en skill?
 
 En skill er en markdown-fil med YAML-frontmatter. SKILLeton kræver **ikke** AI
-for at vedligeholdes — det er bare markdown og et YAML-katalog, som kan redigeres
+for at vedligeholdes — det er bare markdown og et YAML-bibliotek, som kan redigeres
 med en teksteditor. Det er ekte (med den valgte LLM/agent) der *forbruger* skills.
 
 To begreber, der ikke må forveksles:
@@ -40,6 +40,7 @@ To begreber, der ikke må forveksles:
 | `security-review` | Interaktiv OWASP/CWE-analyse med CWE-numre og strukturerede fund | security, quality | |
 | `ci-hardening` | GitHub Actions CI — SHA-pinning, Dependabot og Go-testmønstre | ci, security | |
 | `secure-harness` | Design af sikre bash-pipelines der sender ikke-betroet indhold til `claude --print` | security, ai_engineering | |
+| `safe-flow` | Deterministiske guardrails — feature-branch-flow, pre-commit/pre-push-tjek og CI-gate | ci, security, workflow, guardrails | |
 | `pitch-first` | Kritisk feature-review der starter med en pitch (AIDD) | meta, core, planning, aidd | harness |
 | `context-layers` | Forklarer ekte's kontekst-konstruktion til læring og fejlfinding | meta, aidd, educational | harness |
 | `dreamer` | Reflekterende self-evaluation — finder blinde vinkler i eget output | quality, reflection, meta | |
@@ -51,9 +52,9 @@ præmissen for harnesset), `wiki`-skills når du tilvælger en wiki.
 ## Installation via ekte
 
 ```
-/skills catalog                  # se alle skills (✓ = allerede installeret lokalt)
-/skills show security-review     # læs en skill igennem før du installerer
-/skills install security-review  # installer permanent i .ekte/skills/
+/skills library                  # nummereret liste (✓ = allerede installeret lokalt)
+/skills show 3                   # læs en skill igennem (nr eller navn) før install
+/skills install 1,3,5            # installer flere på én gang (numre eller navne)
 /skills update security-review   # hent nyeste version (eller --all)
 ```
 
@@ -64,7 +65,7 @@ Eller vælg under onboarding når du starter ekte første gang.
 Pull requests er velkomne. En skill skal:
 - Have korrekt YAML-frontmatter (se skill-format nedenfor)
 - Have et klart og afgrænset formål
-- Tilføjes til `catalog.yaml`
+- Tilføjes til `library.yaml`
 
 ## Skill-format
 
@@ -93,15 +94,15 @@ Tekst der injiceres i systemprompten når skill er aktiv.
 `## System Prompt Addition` er den eneste sektion ekte faktisk injicerer —
 resten er dokumentation til mennesker.
 
-## catalog.yaml
+## library.yaml
 
-Hver skill registreres i `catalog.yaml`:
+Hver skill registreres i `library.yaml`:
 
 ```yaml
 version: 1
 skills:
   - name: min-skill        # matcher frontmatter name
-    description: ...        # vises i /skills catalog
+    description: ...        # vises i /skills library
     version: 1.0.0          # matcher frontmatter version — bruges til /skills update
     tags: [tag1, tag2]
     requires: [harness]     # valgfri: obligatorisk skill. "harness" = altid
@@ -109,6 +110,6 @@ skills:
     file: skills/min-skill.md
 ```
 
-Hold `version` i `catalog.yaml` i sync med skill'ens frontmatter `version`, så
+Hold `version` i `library.yaml` i sync med skill'ens frontmatter `version`, så
 ekte kan vise "opdatering tilgængelig" og `/skills update` virker korrekt — bump
 begge samtidig når du ændrer en skill.

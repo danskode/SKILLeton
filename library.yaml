@@ -55,6 +55,12 @@ skills:
     tags: [security, ai_engineering]
     file: skills/secure-harness.md
 
+  - name: safe-flow
+    description: Deterministiske guardrails — feature-branch-flow, pre-commit/pre-push-tjek og CI-gate, så arbejde ikke ødelægges ved en fejl
+    version: 1.0.0
+    tags: [ci, security, workflow, guardrails]
+    file: skills/safe-flow.md
+
   - name: pitch-first
     description: Kritisk feature-review der starter med en pitch for at sikre fælles forståelse (AIDD)
     version: 1.0.0
