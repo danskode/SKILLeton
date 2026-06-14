@@ -42,7 +42,7 @@ wiki-side.
 
 Sidernes frontmatter-skema (som ekte selv genererer ved `/wiki-gem`):
 `type, tags, created, updated, source_count`. Sider ligger under
-`wiki/<type>s/` og kataloget er `wiki/index.md` (læs det først ved opslag).
+`wiki/<type>s/` og indekset er `wiki/index.md` (læs det først ved opslag).
 
 Følg disse principper:
 
