@@ -61,6 +61,12 @@ skills:
     tags: [ci, security, workflow, guardrails]
     file: skills/safe-flow.md
 
+  - name: secrets-hygiene
+    description: Adfærd omkring hemmeligheder — hold secrets ude af kode, commits, prompts og logs; rotér ved læk
+    version: 1.0.0
+    tags: [security, hygiene]
+    file: skills/secrets-hygiene.md
+
   - name: pitch-first
     description: Kritisk feature-review der starter med en pitch for at sikre fælles forståelse (AIDD)
     version: 1.0.0
@@ -102,7 +108,7 @@ skills:
 
 # Kuraterede pakker — installér en hel kategori med '/skills bundle <navn>'.
 bundles:
-  security: [security-review, secure-harness, safe-flow]
+  security: [security-review, secure-harness, safe-flow, secrets-hygiene]
   ci: [ci-hardening, safe-flow]
   aidd: [intent-spec-guide, pitch-first, context-layers]
   java: [java-spring]

@@ -41,6 +41,7 @@ To begreber, der ikke må forveksles:
 | `ci-hardening` | GitHub Actions CI — SHA-pinning, Dependabot og Go-testmønstre | ci, security | |
 | `secure-harness` | Design af sikre bash-pipelines der sender ikke-betroet indhold til `claude --print` | security, ai_engineering | |
 | `safe-flow` | Deterministiske guardrails — feature-branch-flow, pre-commit/pre-push-tjek og CI-gate | ci, security, workflow, guardrails | |
+| `secrets-hygiene` | Adfærd omkring hemmeligheder — secrets ude af kode/commits/prompts; rotér ved læk | security, hygiene | |
 | `pitch-first` | Kritisk feature-review der starter med en pitch (AIDD) | meta, core, planning, aidd | harness |
 | `context-layers` | Forklarer ekte's kontekst-konstruktion til læring og fejlfinding | meta, aidd, educational | harness |
 | `dreamer` | Reflekterende self-evaluation — finder blinde vinkler i eget output | quality, reflection, meta | |
@@ -73,7 +74,7 @@ Installér en hel kategori på én gang i stedet for skill-for-skill:
 
 | Pakke | Indeholder |
 |---|---|
-| `security` | security-review, secure-harness, safe-flow |
+| `security` | security-review, secure-harness, safe-flow, secrets-hygiene |
 | `ci` | ci-hardening, safe-flow |
 | `aidd` | intent-spec-guide, pitch-first, context-layers |
 | `java` | java-spring |
