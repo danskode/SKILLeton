@@ -19,6 +19,13 @@ skills:
     requires: [harness]
     file: skills/intent-spec-guide.md
 
+  - name: spec-driven-dev
+    description: Spec-Driven Development gjort rigtigt — spec som kontrakt med adskilte concerns (Intent/Context/Expectations), testbare acceptkriterier før kode; undgår single-document-fælden
+    version: 1.0.0
+    tags: [spec, sdd, planning, aidd, core]
+    requires: [harness]
+    file: skills/spec-driven-dev.md
+
   - name: feature-detector
     description: Genkender feature-intent og foreslår spec + worktree
     version: 1.0.0
@@ -110,6 +117,6 @@ skills:
 bundles:
   security: [security-review, secure-harness, safe-flow, secrets-hygiene]
   ci: [ci-hardening, safe-flow]
-  aidd: [intent-spec-guide, pitch-first, context-layers]
+  aidd: [intent-spec-guide, spec-driven-dev, pitch-first, context-layers]
   java: [java-spring]
   designer: [ui-designer]
